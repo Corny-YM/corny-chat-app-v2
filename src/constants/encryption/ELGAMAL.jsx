@@ -19,9 +19,10 @@ const encryptionElgamal = (x) => {
 };
 
 const handleEncodeElgamal = (str) => {
-  let strEncode = '';
+  let strEncode = ''; // theanh
+  // t
   for (let i = 0; i < str.length; i++) {
-    let tmp = encryptionElgamal(arrAllChars.indexOf(str[i]));
+    let tmp = encryptionElgamal(arrAllChars.indexOf(str[i])); // arr.indexof("t") = 3
     strEncode += String.fromCharCode(tmp);
   }
   return strEncode;

@@ -1,14 +1,14 @@
 export const powMod = (base, exp, mod) => {
-  let remainder = base;
+  let remainder = base; // 2
   const arrRemainder = [];
-  const binaryExp = Number(exp).toString(2);
-  const length = binaryExp.length - 1;
+  const binaryExp = Number(exp).toString(2); // chuyển về dạng nhị phân
+  const length = binaryExp.length - 1; // 8
 
   for (let i = length; i >= 0; i--) {
     let tmpExp = length - i;
 
     if (tmpExp == 0) {
-      remainder = remainder % mod;
+      remainder = remainder % mod; // 2
     }
     if (tmpExp > 0) {
       remainder = Math.pow(remainder, 2) % mod;

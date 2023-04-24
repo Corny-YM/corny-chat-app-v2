@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { createNewUser } from '../firebase/services';
 
 // ELGAMAL
-import { handleEncodeElgamal, handleDecodeElgamal } from '../constants/encryption/ELGAMAL';
+import { handleEncodeElgamal } from '../constants/encryption/ELGAMAL';
 
 const Register = () => {
   const [error, setError] = useState(false);
